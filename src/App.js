@@ -28,8 +28,8 @@ function App() {
   }
 
   const handleBtLimparClick = () => {
-    setAno(0)
-    setIdade(0)
+    setAno('')
+    setIdade('')
     setChecked(!checked)
     handleBtBlock()
   }
@@ -45,7 +45,7 @@ function App() {
       <input value={idade} readOnly={block} type="number" onChange={handleIdadeChange} />
       </p>
       <p>Já fez aniversário esse ano? Se sim, marque abaixo: <br />
-      <strong><a>SIM</a></strong>
+      <strong><label>SIM</label></strong>
         <input type="checkbox" onChange={handleBtChecked} value={checked} checked={checked} /> <br/>
       </p>
 
